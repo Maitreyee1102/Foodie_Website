@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    flex: row;
+
+}
+.container img{
+    width: 47%;
+    height: 502px;
+}
