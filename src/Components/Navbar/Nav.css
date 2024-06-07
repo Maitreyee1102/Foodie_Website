@@ -4,6 +4,7 @@
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
     height: 15vh;
+    background: hsl(22, 87%, 94%);
 }
 .List{
     display: flex;
