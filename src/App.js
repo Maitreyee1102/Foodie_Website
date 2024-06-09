@@ -17,11 +17,11 @@ export const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/' element = {<Home/>}/>
-        <Route path='/AboutUs' element = {<AboutUs/>}/>
-        <Route path='/ContactUs' element = {<Contact/>}/>
-        <Route path='/Menu' element = {<Menu/>}/>
-        <Route path='/Order' element = {<Order/>}/>
-        <Route path='/Reservation' element = {<Reservation/>}/>
+        <Route path='/aboutUs' element = {<AboutUs/>}/>
+        <Route path='/contactUs' element = {<Contact/>}/>
+        <Route path='/menu' element = {<Menu/>}/>
+        <Route path='/order' element = {<Order/>}/>
+        <Route path='/reservation' element = {<Reservation/>}/>
         <Route path='/LoginSignup' element = {<Login/>}/>
       </Routes>
       </BrowserRouter>

@@ -1,0 +1,47 @@
+.popular-chef{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    font-weight: 800;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.image-container{
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+.image-container img{
+    height:767px;
+    border-radius: 50px;
+}
+.image-container h2{
+    color: gray;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 90px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #FF4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}

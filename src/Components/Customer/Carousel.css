@@ -1,0 +1,44 @@
+.App{
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.App h1{
+    font-size: 8vh;
+    font-weight: bold;
+}
+.carousel{
+    align-items: center;
+    background:rgb(255, 240, 240);
+    width: 70%;
+    border-radius: 50px;
+    width: 50vw;
+}
+.styled-quote{
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.photo{
+    display: flex;
+    background: rgb(255, 240, 240);
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.font{
+    font-size: 26px;
+    margin-top: 10px;
+}
+.photo-container img{
+    margin-right: 20px;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+.font2{
+    font-size: 40px;
+}

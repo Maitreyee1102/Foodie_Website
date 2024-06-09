@@ -1,0 +1,25 @@
+.Banner{
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: hsl(22, 60%, 90%);
+    width: 70%;
+    border-radius: 50px;
+    margin-left: 245px;
+    height: 60vh;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    gap: 40px;
+}
+.Banner h1{
+    font-size: 11vh;
+    font-weight: 600;
+    gap: 0;
+    color: rgb(48 8 0);
+}
