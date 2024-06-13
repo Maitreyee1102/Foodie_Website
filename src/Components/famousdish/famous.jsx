@@ -3,6 +3,7 @@ import illustration2 from '../assets/img_illustration2.png'
 import './famous.css'
 import curry1 from '../assets/curryleave.png'
 import curry2 from '../assets/curryleave2.png'
+import { Link } from 'react-router-dom'
 
 
 export const famous = () => {
@@ -19,7 +20,7 @@ export const famous = () => {
             <h1>Our Most <br /> Popular <span className='red'>Dish.</span></h1>
             <p>This dish is full of flavor and nutrition! Quinoa is a complete protein, providing all the essential amino acids your body needs, and is also a good source of fiber.</p>
             <div className="btn">
-                <div className='btn1'>Order</div></div>
+            <Link style = {{textDecoration: "none"}} to='/order'><div className='btn1'>Order</div></Link></div>
         </div>
     </div>
   )

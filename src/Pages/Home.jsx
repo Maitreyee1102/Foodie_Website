@@ -1,6 +1,5 @@
 import React from 'react'
 import Noodle from '../Components/NoodleHome/noodle'
-import { Footer } from '../Components/Footer/Footer'
 import Famous from '../Components/famousdish/famous'
 import Chef from '../Components/Chefs/chef'
 import Customer from '../Components/Customer/Customer'
@@ -14,7 +13,6 @@ export const Home = () => {
     <Chef/>
     <Customer/>
     <Hungry/>
-    <Footer/>
     </>
   )
 }

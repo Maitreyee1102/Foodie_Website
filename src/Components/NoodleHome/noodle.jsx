@@ -1,6 +1,7 @@
 import React from 'react'
 import './noodle.css'
 import illustration from '../assets/img_illustration.png'
+import { Link } from 'react-router-dom'
 
 export const noodle = () => {
   return (
@@ -9,8 +10,8 @@ export const noodle = () => {
         <h1>Best <br />Restaurant <br /> In <span className='red'>Town.</span></h1>
         <p>We provide best food in town, we provide home delivery and dine in services.</p>
         <div className="btn-btn">
-        <div className="btn-1">Order Now</div>
-        <div className="btn-2">Reservation</div>
+        <Link style = {{textDecoration: "none"}} to='/order'><div className="btn-1">Order Now</div></Link>
+        <Link style = {{textDecoration: "none"}} to='/reservation'><div className="btn-2">Reservation</div></Link>
         </div>
       </div>
       <div className="home-right">

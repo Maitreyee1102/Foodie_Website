@@ -21,7 +21,7 @@ export const Nav = () => {
         <div className="nav-login">
         <img src={cart_icon} alt="" />
         <div className="nav-cart-count">0</div>
-              <Link to='../Pages/Login'><button>Login</button></Link>
+              <Link to='/Login'><button>Login</button></Link>
             </div>
     </div>
     </>

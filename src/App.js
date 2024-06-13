@@ -8,7 +8,9 @@ import Menu from "./Pages/Menu"
 import Order from "./Pages/Order"
 import Reservation from "./Pages/Reservation"
 import Login from "./Pages/Login"
-/*import { Footer } from './Components/Footer/Footer'*/
+import { Footer } from './Components/Footer/Footer'
+import {Details} from './Pages/Details'
+import { ReservationConfirm } from './Pages/ReservationConfirm'
 
 export const App = () => {
   return (
@@ -22,9 +24,12 @@ export const App = () => {
         <Route path='/menu' element = {<Menu/>}/>
         <Route path='/order' element = {<Order/>}/>
         <Route path='/reservation' element = {<Reservation/>}/>
-        <Route path='/LoginSignup' element = {<Login/>}/>
+        <Route path='/Login' element = {<Login/>}/>
+        <Route path='/reservation/details' element = {<Details/>}/>
+        <Route path='/reservation/detail/confirmation' element = {<ReservationConfirm/>}/>
       </Routes>
       </BrowserRouter>
+      <Footer/>
     </div>
   )
 }

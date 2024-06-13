@@ -1,0 +1,80 @@
+.page-whole{
+    display: flex;
+    flex-direction: row;
+}
+.input-data input{
+    height: 72px;
+    width: 85vh;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    color: #5c5c5c;
+    font-size: 18px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.details-btn{
+    width: 80vh;
+    height: 10vh;
+    color: white;
+    background: #ff4141;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+.left-half h2{
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(63, 23, 23);
+    margin: 30px;
+}
+.left-half{
+    align-items: center;
+}
+/* src/CSS/Details.css */
+.icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(60%) saturate(750%) hue-rotate(150deg) brightness(90%) contrast(60%);
+    filter: drop-shadow(2px 2px 2px black);
+  }
+  .details .icon {
+    margin-right: 8px;
+  }
+  
+  .details {
+    align-items: center;
+    font-size: x-large;
+    font-weight: 500;
+    background: #e5e3e3;
+    margin-top: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    height: 40vh;
+    width: 90%;
+    border-radius: 15px;
+  }
+  
+  .details p {
+    margin: 0;
+  }
+  .details h2{
+    margin-bottom: 30px;
+  }
+  .information{
+    margin-top: 50px;
+    font-size: x-large;
+    font-weight: 300;
+  }
+  .information p{
+    margin-top: 20px;
+  }
+  .div-12{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+  
