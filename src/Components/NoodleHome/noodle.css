@@ -1,6 +1,6 @@
 .home{
     height: 90vh;
-    background: hsl(22, 87%, 94%);
+    background: linear-gradient(to right, hsl(22, 87%, 94%), whitesmoke);
     display: flex;
 }
 .home-left{

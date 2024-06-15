@@ -1,8 +1,7 @@
 .famous{
     height: 125vh;
-    background: hsl(133, 100%, 92%);
+    background: linear-gradient(to right, hsl(133, 100%, 92%), whitesmoke);
     display: flex;
-    margin-top: 20px;
     gap: 0;
 }
 .famous-left{

@@ -5,14 +5,30 @@ import img from '../Components/assets/check_box_24dp_FILL0_wght400_GRAD0_opsz24.
 import img2 from '../Components/assets/calendar_month_24dp_FILL0_wght400_GRAD0_opsz24.png';
 import img3 from '../Components/assets/schedule_24dp_FILL0_wght400_GRAD0_opsz24.png';
 import img4 from '../Components/assets/person_24dp_FILL0_wght400_GRAD0_opsz24.png';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import reservation from '../Components/assets/reservation.png';
 import img5 from '../Components/assets/edit_square_24dp_FILL0_wght400_GRAD0_opsz24.png';
 import img6 from '../Components/assets/close_24dp_FILL0_wght400_GRAD0_opsz24.png';
+import { Link } from 'react-router-dom';
 
 export const ReservationConfirm = () => {
   const location = useLocation();
   const { date, time, partySize, firstName, lastName, phone, email, occasion } = location.state || {};
+  const navigate = useNavigate();
+  const handleClick = (event) => {
+    navigate('/reservation/cancel', {
+      state: {
+        date: date,
+        time: time,
+        partySize: partySize,
+        firstName: firstName,
+        lastName: lastName,
+        phone: phone,
+        email: email,
+        occasion: occasion,
+      },
+    });
+  };
 
   return (
     <>
@@ -62,14 +78,14 @@ export const ReservationConfirm = () => {
             </div>
           </div>
           <div className="buttons">
-            <div className="btn12">
+          <Link style = {{textDecoration: "none"}} to = '/reservation/details'><div className="btn12">
               <h4>Modify</h4>
               <img src={img5} alt="" className='icon1' />
-            </div>
-            <div className="btn13">
+            </div></Link>
+            <Link style = {{textDecoration: "none"}} to = '/reservation/cancel'><div onClick={handleClick} className="btn13">
               <h4>Cancel</h4>
               <img src={img6} alt="" className='icon1' />
-            </div>
+            </div></Link>
           </div>
         </div>
       </div>

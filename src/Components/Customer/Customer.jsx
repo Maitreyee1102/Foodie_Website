@@ -10,7 +10,7 @@ function Customer() {
     <div className="App">
       <h1>What Our Customers Say</h1>
       <div className="carousel">
-      <Carousel style={{ width: '80%', height: '400px', margin: '0 auto', border: 'none' }}>
+      <Carousel style={{ width: '100%', height: '400px', margin: '0 auto', border: 'none' }}>
         <Carousel.Item>
           <p className='styled-quote'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,<br /> commodi cum sequi doloremque, repellendus earum at nulla beatae magni ea eaque,<br /> distinctio ex aliquid. Voluptatibus voluptate obcaecati cumque inventore officiis?</p>
           <div className="photo">

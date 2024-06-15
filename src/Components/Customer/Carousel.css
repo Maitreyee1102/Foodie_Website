@@ -1,4 +1,4 @@
-.App{
+.App {
     margin: 30px;
     align-items: center;
     text-align: center;
@@ -6,39 +6,162 @@
     display: flex;
     flex-direction: column;
 }
-.App h1{
+
+.App h1 {
     font-size: 8vh;
     font-weight: bold;
 }
-.carousel{
+
+.carousel {
     align-items: center;
-    background:rgb(255, 240, 240);
-    width: 70%;
-    border-radius: 50px;
+    background:  rgb(232, 232, 232);
+    border-radius: 10px;
     width: 50vw;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
-.styled-quote{
+
+.styled-quote {
     font-style: italic;
     font-weight: bold;
     margin-top: 100px;
 }
-.photo{
+
+.photo {
     display: flex;
-    background: rgb(255, 240, 240);
+    background: rgb(232, 232, 232);
     align-items: center;
     justify-content: center;
     margin-top: 70px;
 }
-.font{
+
+.font {
     font-size: 26px;
     margin-top: 10px;
 }
-.photo-container img{
+
+.photo-container img {
     margin-right: 20px;
     height: 125px;
     width: 125px;
     border-radius: 50%;
 }
-.font2{
+
+.font2 {
     font-size: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .App h1 {
+        font-size: 6vh;
+    }
+
+    .font2 {
+        font-size: 35px;
+    }
+
+    .font {
+        font-size: 24px;
+    }
+
+    .styled-quote {
+        margin-top: 80px;
+    }
+
+    .photo {
+        margin-top: 50px;
+    }
+
+    .photo-container img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .App h1 {
+        font-size: 5.5vh;
+    }
+
+    .font2 {
+        font-size: 32px;
+    }
+
+    .font {
+        font-size: 22px;
+    }
+
+    .styled-quote {
+        margin-top: 60px;
+    }
+
+    .photo {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .photo-container img {
+        height: 90px;
+        width: 90px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .App h1 {
+        font-size: 5vh;
+    }
+
+    .font2 {
+        font-size: 30px;
+    }
+
+    .font {
+        font-size: 20px;
+    }
+
+    .styled-quote {
+        margin-top: 40px;
+    }
+
+    .photo {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .photo-container img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .App h1 {
+        font-size: 4.5vh;
+    }
+
+    .font2 {
+        font-size: 28px;
+    }
+
+    .font {
+        font-size: 18px;
+    }
+
+    .styled-quote {
+        margin-top: 30px;
+    }
+
+    .photo {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .photo-container img {
+        height: 70px;
+        width: 70px;
+    }
 }

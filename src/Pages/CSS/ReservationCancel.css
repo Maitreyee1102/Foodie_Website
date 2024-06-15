@@ -1,0 +1,64 @@
+.cancelation{
+    height: 40vh;
+    width: 100%;
+    background: rgb(241, 127, 56);
+    color: whitesmoke;
+    position: relative;
+    padding: 20px;
+}
+.details2{
+    align-items: center;
+    font-size: x-large;
+    font-weight: 400;
+    margin-top: 10vw;
+    height: 50vh;
+    width: 35%;
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+}
+.details2 h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.details2 .icon {
+    margin-right: 15px;
+}
+.detailedInfo1{
+    display: flex;
+    flex-direction: row;
+}
+.small-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; 
+    width: 400px;
+    border-radius: 50%;
+    background: rgb(255, 237, 213);
+}
+.container-about2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* This makes the container take full height of the viewport */
+    width: 500px;
+    border-radius: 50%;
+    background: rgb(255, 244, 236);
+    margin: 70px;
+    margin-top: 15vw;
+}
+.btn11{
+    display: flex;
+    flex-direction: row;
+    background: #b4b3b333;
+    font-size: x-large;
+    color: #000000;
+    height: 10vh;
+    width: 15vw;
+    border-radius: 15px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}

@@ -1,5 +1,5 @@
 .img-container img{
-    height: 100vh;
+    height: 85vh;
     width: 80vh;
 }
 .img-container{
@@ -9,9 +9,10 @@
 .order{
     display: flex;
     flex-direction: row;
+    margin-top: 15vh;
 }
 .right input{
-    height: 102px;
+    height: 72px;
     width: 85vh;
     padding-left: 20px;
     border: 1px solid #c9c9c9;
@@ -26,15 +27,17 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
 }
 .right h1{
     font-size: 100px;
     font-weight: 700;
     color: rgb(63, 30, 30);
+    margin-right: 140px;
 }
 .book{
     width: 80vh;
-    height: 10vh;
+    height: 72px;
     color: white;
     background: #ff4141;
     border: none;

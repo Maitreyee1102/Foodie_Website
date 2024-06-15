@@ -1,4 +1,4 @@
-.Banner{
+.Banner_new{
     margin: 30px;
     align-items: center;
     text-align: center;
@@ -11,13 +11,13 @@
     margin-left: 245px;
     height: 60vh;
 }
-.buttons{
+.buttons_new{
     display: flex;
     flex-direction: row;
     margin: 40px;
     gap: 40px;
 }
-.Banner h1{
+.Banner_new h1{
     font-size: 11vh;
     font-weight: 600;
     gap: 0;

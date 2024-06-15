@@ -1,0 +1,47 @@
+.order-page{
+    display: flex;
+    flex-direction: column;
+}
+.place-order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(40%,500px);
+    margin-left: 50px;
+}
+.place-order-left .titles{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.place-order-left input{
+    margin-bottom: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+.place-order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+    margin-top: 70px;
+}
+.place-order .cart-items-total button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.map-container{
+    height: 30vw;
+    width: 80%;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 50px;
+}

@@ -8,7 +8,7 @@ export const chef = () => {
   return (
     <>
     <div className='popular-chef'>
-    <h1 className='title'>Our Popular Chef</h1>
+    <h1 className='title1'>Our Popular Chef</h1>
     <div className="container">
         <div className="image-container">
             <img src={image1} alt="" />

@@ -11,7 +11,7 @@ export const About = () => {
         <div className="left-upper">
           <div className="container-about">
             <div className="small-container">
-            <img className='circular-image' src={image1} alt="" />
+            <img className='circular-image1' src={image1} alt="" />
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@ export const About = () => {
         <div className="right-middle">
           <div className="container-about">
             <div className="small-container">
-            <img className='circular-image' src={image2} alt="" />
+            <img className='circular-image1' src={image2} alt="" />
             </div>
           </div>
         </div>
