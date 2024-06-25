@@ -104,3 +104,64 @@
     font-weight: 500;
     color: rgb(84, 37, 28);
 }
+@media (max-width: 1200px) {
+    .container-about {
+        height: 500px; /* Adjust height for medium screens */
+        width: 500px; /* Adjust width for medium screens */
+        margin: 40px; /* Adjust margin for medium screens */
+    }
+
+    .small-container {
+        height: 400px; /* Adjust height for medium screens */
+        width: 400px; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container-about {
+        height: 400px; /* Adjust height for small screens */
+        width: 400px; /* Adjust width for small screens */
+        margin: 20px; /* Adjust margin for small screens */
+    }
+
+    .small-container {
+        height: 300px; /* Adjust height for small screens */
+        width: 300px; /* Adjust width for small screens */
+    }
+
+    .right-upper, .left-middle, .bottom-right {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+
+    .right-upper h1, .bottom-right h1 {
+        font-size: 6vh; /* Adjust font size for small screens */
+    }
+
+    .right-upper p, .left-middle, .bottom-right p {
+        font-size: medium; /* Adjust font size for small screens */
+    }
+
+    .bottom-right h2 {
+        font-size: 4vh; /* Adjust font size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-about, .small-container {
+        height: 300px; /* Adjust height for extra small screens */
+        width: 300px; /* Adjust width for extra small screens */
+        margin: 10px; /* Adjust margin for extra small screens */
+    }
+
+    .right-upper h1, .bottom-right h1 {
+        font-size: 4vh; /* Adjust font size for extra small screens */
+    }
+
+    .right-upper p, .left-middle, .bottom-right p {
+        font-size: small; /* Adjust font size for extra small screens */
+    }
+
+    .bottom-right h2 {
+        font-size: 3vh; /* Adjust font size for extra small screens */
+    }
+}
