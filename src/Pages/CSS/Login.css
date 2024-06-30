@@ -1,14 +1,15 @@
-.loginsignup{
+.loginsignup {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
     background: #00000090;
     display: grid;
-}
-.loginsignup-conatiner{
+  }
+  
+  .loginsignup-container {
     place-self: center;
-    width: max(23vw,330px);
+    width: max(23vw, 330px);
     color: #808080;
     background-color: white;
     display: flex;
@@ -18,21 +19,23 @@
     border-radius: 8px;
     font-size: 14px;
     animation: fadeIn 0.5s;
-    
-}
-.login-popup-title{
+  }
+  
+  .login-popup-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
-}
-.loginsignupfields{
+  }
+  
+  .loginsignupfields {
     display: flex;
     flex-direction: column;
     gap: 29px;
     margin-top: 30px;
-}
-.loginsignupfields input{
+  }
+  
+  .loginsignupfields input {
     height: 72px;
     width: 100%;
     padding-left: 20px;
@@ -40,8 +43,9 @@
     color: #5c5c5c;
     font-size: 18px;
     margin: 5px;
-}
-.loginsignup-conatiner button{
+  }
+  
+  .loginsignup-container button {
     width: 100%;
     height: 10vh;
     color: white;
@@ -52,12 +56,14 @@
     font-weight: 500;
     cursor: pointer;
     border-radius: 8px;
-}
-.loginsignup-login span{
+  }
+  
+  .loginsignup-login span {
     color: #ff4141;
     font-weight: 600;
-}
-.loginsignup-agree{
+  }
+  
+  .loginsignup-agree {
     display: flex;
     align-items: center;
     margin-top: 25px;
@@ -65,14 +71,18 @@
     color: #5c5c5c;
     font-size: 18px;
     font-weight: 500;
-}
-.account{
+  }
+  
+  .account {
     font-size: 20px;
     font-weight: 400;
-}
-.account span{
+  }
+  
+  .account span {
     color: #ff4141;
-}
-.account:hover{
+  }
+  
+  .account:hover {
     cursor: pointer;
-}
+  }
+  

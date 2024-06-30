@@ -1,10 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './CSS/About.css'
 import { Link } from 'react-router-dom'
 import image1 from '../Components/assets/about_chef.png'
 import image2 from '../Components/assets/about_food.png'
 import image3 from '../Components/assets/about_owner.png'
 export const About = () => {
+  useEffect(() => {
+    const navbar = document.getElementById('Navbar');
+    if (navbar) {
+      navbar.classList.add('not-home','fixed');
+    }
+
+    return () => {
+      if (navbar) {
+        navbar.classList.remove('not-home','fixed');
+      }
+    };
+  }, []);
   return (
     <div className='about'>
       <div className="upper">

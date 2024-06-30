@@ -12,15 +12,15 @@ import { Footer } from './Components/Footer/Footer'
 import {Details} from './Pages/Details'
 import { ReservationConfirm } from './Pages/ReservationConfirm'
 import {ReservationCancel} from './Pages/ReservationCancel'
-import CartContextProvider from './Contexts/cartContext'
 import {Cart} from './Pages/Cart'
+
 
 export const App = () => {
   const [showLogin,setShowLogin] = useState(false);
   return (
     <div>
       {showLogin?<Login setShowLogin={setShowLogin}/>:<></>}
-      <CartContextProvider>
+     
       <BrowserRouter>
       <Navbar setShowLogin = {setShowLogin}/>
       <Routes>
@@ -37,7 +37,6 @@ export const App = () => {
       </Routes>
       </BrowserRouter>
       <Footer/>
-      </CartContextProvider>
     </div>
   )
 }

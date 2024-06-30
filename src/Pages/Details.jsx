@@ -1,5 +1,5 @@
 // src/Details.js
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './CSS/Details.css';
 import img1 from '../Components/assets/calendar_month_24dp_FILL0_wght400_GRAD0_opsz24.png';
@@ -32,6 +32,18 @@ export const Details = () => {
       },
     });
   };
+  useEffect(() => {
+    const navbar = document.getElementById('Navbar');
+    if (navbar) {
+      navbar.classList.add('not-home','fixed');
+    }
+
+    return () => {
+      if (navbar) {
+        navbar.classList.remove('not-home','fixed');
+      }
+    };
+  }, []);
 
   return (
     <>

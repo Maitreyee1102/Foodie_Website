@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './CSS/ReservationCancel.css'
 import img2 from '../Components/assets/calendar_month_24dp_FILL0_wght400_GRAD0_opsz24.png';
 import img3 from '../Components/assets/schedule_24dp_FILL0_wght400_GRAD0_opsz24.png';
@@ -9,8 +9,20 @@ import reservation from '../Components/assets/reservation.png';
 import { useLocation } from 'react-router-dom';
 
 export const ReservationCancel = () => {
+  useEffect(() => {
+    const navbar = document.getElementById('Navbar');
+    if (navbar) {
+      navbar.classList.add('not-home','fixed');
+    }
+
+    return () => {
+      if (navbar) {
+        navbar.classList.remove('not-home','fixed');
+      }
+    };
+  }, []);
     const location = useLocation();
-  const { date, time, partySize, firstName, lastName, phone, email, occasion } = location.state || {};
+  const { date, time, partySize, firstName,  phone,  occasion } = location.state || {};
   return (
     <>
         <div className="reserve">

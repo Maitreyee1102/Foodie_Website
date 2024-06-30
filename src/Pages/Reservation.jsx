@@ -1,5 +1,5 @@
 // src/Reservation.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import image1 from '../Components/assets/reservation.png';
 import './CSS/Reservation.css';
 import { useNavigate } from 'react-router-dom';
@@ -28,6 +28,19 @@ export const Reservation = () => {
       state: { date: inputValue1, time: inputValue2, partySize: inputValue3 },
     });
   };
+
+  useEffect(() => {
+    const navbar = document.getElementById('Navbar');
+    if (navbar) {
+      navbar.classList.add('not-home','fixed');
+    }
+
+    return () => {
+      if (navbar) {
+        navbar.classList.remove('not-home','fixed');
+      }
+    };
+  }, []);
 
   return (
     <>

@@ -1,5 +1,5 @@
 // src/ReservationConfirm.js
-import React from 'react';
+import React, {useEffect} from 'react';
 import './CSS/ReservationConfirm.css';
 import img from '../Components/assets/check_box_24dp_FILL0_wght400_GRAD0_opsz24.png';
 import img2 from '../Components/assets/calendar_month_24dp_FILL0_wght400_GRAD0_opsz24.png';
@@ -29,6 +29,18 @@ export const ReservationConfirm = () => {
       },
     });
   };
+  useEffect(() => {
+    const navbar = document.getElementById('Navbar');
+    if (navbar) {
+      navbar.classList.add('not-home','fixed');
+    }
+
+    return () => {
+      if (navbar) {
+        navbar.classList.remove('not-home','fixed');
+      }
+    };
+  }, []);
 
   return (
     <>
