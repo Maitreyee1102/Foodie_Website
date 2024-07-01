@@ -139,17 +139,23 @@
   }
   @media screen and (max-width: 768px) {
     .Container {
-      flex-direction: column;
-      align-items: flex-start;
+      display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    font-size: 26px;
     }
   
     .List {
       display: none;
-      flex-direction: column;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      gap: 0;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    font-size: 26px;
     }
   
     .List.visible {
@@ -157,9 +163,12 @@
     }
   
     .List li {
-      width: 100%;
+      width: 50vw;
       padding: 10px;
       text-align: left;
+      background: #00000090;
+      color: white;
+    
     }
   
     .nav-login {

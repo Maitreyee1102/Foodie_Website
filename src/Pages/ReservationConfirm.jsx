@@ -49,11 +49,11 @@ export const ReservationConfirm = () => {
           <h1>Reservation has been confirmed!!</h1>
           <div className="div-1">
             <img src={img} alt="" className='icon' />
-            <h3>The Confirmation has been sent to your email</h3>
+            <h4>The Confirmation has been sent to your email</h4>
           </div>
           <div className="div-1">
             <img src={img2} alt="" className='icon' />
-            <h3>BookingID #123456</h3>
+            <h4>BookingID #123456</h4>
           </div>
         </div>
         <div className="detailedInfo">

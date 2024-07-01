@@ -1,20 +1,26 @@
-.about{
+.about {
     margin-top: 15vh;
 }
-.upper{
+
+.upper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.container-about{
+
+.container-about {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px; /* This makes the container take full height of the viewport */
+    height: 700px; 
     width: 700px;
     border-radius: 50%;
     background: rgb(239, 238, 238);
     margin: 70px;
 }
+
 .small-container {
     display: flex;
     justify-content: center;
@@ -26,25 +32,34 @@
 }
 
 .circular-image1 {
-    width: 500px; /* Set your desired width */
-    height: 500px; /* Set your desired height */
+    width: 500px; 
+    height: 500px; 
 }
 
-.middle{
+.middle {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.bottom{
+
+.bottom {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 120px;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
-.bottom-left img{
+
+.bottom-left img {
     height: 100vh;
     width: auto;
 }
-.right-upper{
+
+.right-upper {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -52,22 +67,26 @@
     padding-left: 180px;
     line-height: 1.1;
 }
-.red{
+
+.red {
     color: red;
 }
-.right-upper h1{
+
+.right-upper h1 {
     font-size: 11vh;
     font-weight: 600;
     gap: 0;
-    color: rgb(48 8 0);
+    color: rgb(48, 8, 0);
 }
-.right-upper p{
+
+.right-upper p {
     font-size: xx-large;
     letter-spacing: 0.1rem;
     line-height: 2;
     margin-top: 40px;
 }
-.left-middle{
+
+.left-middle {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -79,7 +98,8 @@
     letter-spacing: 0.1rem;
     line-height: 2;
 }
-.bottom-right{
+
+.bottom-right {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -87,81 +107,118 @@
     padding-left: 180px;
     line-height: 1.1;
 }
-.bottom-right h1{
+
+.bottom-right h1 {
     font-size: 11vh;
     font-weight: 600;
     gap: 0;
-    color: rgb(48 8 0);
+    color: rgb(48, 8, 0);
 }
-.bottom-right p{
+
+.bottom-right p {
     font-size: xx-large;
     letter-spacing: 0.1rem;
     line-height: 2;
     margin-top: 40px;
 }
-.bottom-right h2{
+
+.bottom-right h2 {
     font-size: 7vh;
     font-weight: 500;
     color: rgb(84, 37, 28);
 }
+
+/* Responsive styles */
 @media (max-width: 1200px) {
     .container-about {
-        height: 500px; /* Adjust height for medium screens */
-        width: 500px; /* Adjust width for medium screens */
-        margin: 40px; /* Adjust margin for medium screens */
+        height: 500px;
+        width: 500px;
+        margin: 40px;
     }
 
     .small-container {
-        height: 400px; /* Adjust height for medium screens */
-        width: 400px; /* Adjust width for medium screens */
+        height: 400px;
+        width: 400px;
+    }
+
+    .circular-image1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .right-upper h1, .bottom-right h1 {
+        font-size: 9vh;
+    }
+
+    .right-upper p, .left-middle, .bottom-right p {
+        font-size: large;
+    }
+
+    .bottom-right h2 {
+        font-size: 5vh;
     }
 }
 
 @media (max-width: 768px) {
     .container-about {
-        height: 400px; /* Adjust height for small screens */
-        width: 400px; /* Adjust width for small screens */
-        margin: 20px; /* Adjust margin for small screens */
+        height: 400px;
+        width: 400px;
+        margin: 20px;
     }
 
     .small-container {
-        height: 300px; /* Adjust height for small screens */
-        width: 300px; /* Adjust width for small screens */
+        height: 300px;
+        width: 300px;
+    }
+
+    .circular-image1 {
+        width: 200px;
+        height: 200px;
     }
 
     .right-upper, .left-middle, .bottom-right {
-        padding: 10px; /* Adjust padding for small screens */
+        padding: 10px;
     }
 
     .right-upper h1, .bottom-right h1 {
-        font-size: 6vh; /* Adjust font size for small screens */
+        font-size: 6vh;
     }
 
     .right-upper p, .left-middle, .bottom-right p {
-        font-size: medium; /* Adjust font size for small screens */
+        font-size: medium;
     }
 
     .bottom-right h2 {
-        font-size: 4vh; /* Adjust font size for small screens */
+        font-size: 4vh;
     }
 }
 
 @media (max-width: 480px) {
     .container-about, .small-container {
-        height: 300px; /* Adjust height for extra small screens */
-        width: 300px; /* Adjust width for extra small screens */
-        margin: 10px; /* Adjust margin for extra small screens */
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+    }
+
+    .circular-image1 {
+        width: 150px;
+        height: 150px;
     }
 
     .right-upper h1, .bottom-right h1 {
-        font-size: 4vh; /* Adjust font size for extra small screens */
+        font-size: 4vh;
     }
 
     .right-upper p, .left-middle, .bottom-right p {
-        font-size: small; /* Adjust font size for extra small screens */
+        font-size: small;
     }
 
     .bottom-right h2 {
-        font-size: 3vh; /* Adjust font size for extra small screens */
+        font-size: 3vh;
+    }
+
+    .bottom, .middle, .upper {
+        flex-direction: column;
+        align-items: center;
     }
 }

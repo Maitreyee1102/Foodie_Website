@@ -59,3 +59,42 @@
 .headings h4{
     margin-top: 30px;
 }
+@media (max-width:1200px) {
+    .Contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media (max-width:768px) {
+    .Contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media (max-width:480px) {
+    .Contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

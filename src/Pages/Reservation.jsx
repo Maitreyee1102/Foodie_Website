@@ -53,21 +53,21 @@ export const Reservation = () => {
         <div className="right">
           <h1>Book a Table</h1>
           <form onSubmit={handleSubmit}>
-            <input
+            <input required
               type="date"
               id='userInput1'
               placeholder='Date'
               value={inputValue1}
               onChange={handleInputChange1}
             />
-            <input
+            <input required
               type="time"
               id='userInput2'
               placeholder='Time'
               value={inputValue2}
               onChange={handleInputChange2}
             />
-            <input
+            <input required
               type="number"
               id='userInput3'
               min={1}

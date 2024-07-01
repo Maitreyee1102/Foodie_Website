@@ -53,12 +53,12 @@ export const Details = () => {
             <h3>Data Order</h3>
             <div className="input-data">
               <div className="multi-fields">
-              <input type="text" name="firstName" placeholder="First Name" />
-              <input type="text" name="lastName" placeholder="Last Name" />
+              <input required type="text" name="firstName" placeholder="First Name" />
+              <input required type="text" name="lastName" placeholder="Last Name" />
               </div>
               <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
-              <input type="email" name="email" placeholder="Email Address" />
-              <input type="text" name="occasion" placeholder="Occasion" />
+              <input required type="email" name="email" placeholder="Email Address" />
+              <input required type="text" name="occasion" placeholder="Occasion" />
               <button className="details-btn" type="submit">Confirm Reservation</button>
             </div>
           </div>

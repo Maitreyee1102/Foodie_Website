@@ -1,4 +1,4 @@
-.popular-chef{
+.popular-chef {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -6,37 +6,44 @@
     justify-content: center;
     margin-top: 100px;
 }
-.title1{
+
+.title1 {
     text-align: center;
     color: black;
     font-size: 70px;
     font-weight: 800;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: row;
     gap: 70px;
     align-items: center;
     justify-content: center;
 }
-.image-container{
+
+.image-container {
     border-radius: 50px;
     width: 100%;
     text-align: center;
     font-size: x-large;
     transition: transform 0.3s ease;
 }
-.image-container:hover{
+
+.image-container:hover {
     transform: scale(1.1);
 }
-.image-container img{
-    height:767px;
+
+.image-container img {
+    height: 767px;
     border-radius: 50px;
 }
-.image-container h2{
+
+.image-container h2 {
     color: gray;
 }
-.btn1{
+
+.btn1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,4 +56,61 @@
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .title1 {
+        font-size: 50px;
+    }
+
+    .container {
+        gap: 50px;
+    }
+
+    .image-container img {
+        height: 600px;
+    }
+
+    .btn1 {
+        width: 180px;
+        height: 75px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image-container img {
+        height: 500px;
+    }
+
+    .btn1 {
+        width: 150px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title1 {
+        font-size: 35px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+    .image-container img {
+        height: 300px;
+    }
+
+    .btn1 {
+        width: 120px;
+        height: 50px;
+        font-size: 14px;
+    }
 }

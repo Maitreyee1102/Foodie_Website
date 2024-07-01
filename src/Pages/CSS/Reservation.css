@@ -1,17 +1,37 @@
-.img-container img{
-    height: 85vh;
-    width: 80vh;
-}
-.img-container{
+.img-container {
     padding: 40px;
     margin: 40px;
 }
-.order{
+
+.img-container img {
+    height: 85vh;
+    width: 80vh;
+}
+
+.order {
     display: flex;
     flex-direction: row;
     margin-top: 15vh;
+    justify-content: center; /* Center align items */
 }
-.right input{
+
+.right {
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.right h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: rgb(63, 30, 30);
+    margin-right: 140px;
+}
+
+.right input {
     height: 72px;
     width: 85vh;
     padding-left: 20px;
@@ -21,21 +41,8 @@
     margin: 20px;
     border-radius: 15px;
 }
-.right{
-    margin-left: 100px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-}
-.right h1{
-    font-size: 100px;
-    font-weight: 700;
-    color: rgb(63, 30, 30);
-    margin-right: 140px;
-}
-.book{
+
+.book {
     width: 80vh;
     height: 72px;
     color: white;
@@ -48,6 +55,105 @@
     text-align: center;
     border-radius: 15px;
 }
-.left{
+
+.left {
     margin: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .right{
+        align-items: center;
+    }
+    .img-container img {
+        height: 60vh;
+        width: 55vh;
+    }
+
+    .right input {
+        width: 60vh;
+        height: 60px;
+    }
+
+    .book {
+        align-items: center;
+        width: 60vh;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .right h1 {
+        font-size: 80px;
+        margin-right: 100px;
+    }
+    .right form{
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-container img {
+        display: none; /* Hide image on small screens */
+    }
+
+    .right {
+        align-items: center;
+        margin-left: 0;
+        padding-top: 50px;
+    }
+
+    .right input {
+        width: 80%;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .book {
+        width: 80%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .right h1 {
+        font-size: 60px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .order {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .right form{
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .right{
+        align-items: center;
+    }
+    .right form{
+        align-items: center;
+    }
+    .right input {
+        width: 90%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .book {
+        width: 90%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .right h1 {
+        font-size: 40px;
+    }
+
+    .order {
+        margin-top: 2vh;
+    }
 }

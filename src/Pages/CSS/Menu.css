@@ -1,24 +1,29 @@
-.variety{
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.Menu{
+.Menu {
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 15vh;
 }
-.Menu h1{
+
+.Menu h1 {
     font-size: 100px;
     font-weight: 700;
     color: rgb(63, 30, 30);
     margin-top: 50px;
     margin-bottom: 30px;
 }
-.default{
+
+.variety {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.default {
     height: 5vw;
     width: 15vw;
     border-radius: 15px;
@@ -29,10 +34,12 @@
     padding: 0px 35px;
     font-weight: 500;
 }
-.default h4{
+
+.default h4 {
     margin-top: 20px;
 }
-.toggled{
+
+.toggled {
     background: #f54748;
     color: white;
     font-weight: 400;
@@ -44,19 +51,24 @@
     text-align: center;
     padding: 0px 35px;
 }
-.default:hover{
+
+.default:hover {
     cursor: pointer;
 }
-.toggled h4{
+
+.toggled h4 {
     margin-top: 20px;
 }
-.dishes{
+
+.dishes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: 50px;
 }
-.dish{
+
+.dish {
     margin: 3vw;
     padding: 10px;
     border-radius: 15px;
@@ -64,31 +76,34 @@
     height: 41vw;
     background: #D0c7c719;
 }
-.dish img{
+
+.dish img {
     width: 15vw; /* Ensure images do not exceed the width of their container */
     height: 15vw; /* Set a maximum height */
     display: block;
     margin: 20px auto; /* Center the image horizontally */
     border-radius: 50%;
-    
-  }
-.dish h4{
+}
+
+.dish h4 {
     margin: 10px 0 5px 0;
     font-size: 30px;
     font-weight: 500;
-  }
-  
-.dish h3{
+}
+
+.dish h3 {
     margin: 5px 0;
     font-size: 26px;
     font-weight: 600;
 }
-.dish p{
+
+.dish p {
     margin: 5px 0;
     font-size: 20px;
     font-weight: 200;
 }
-.btn-3{
+
+.btn-3 {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -101,19 +116,154 @@
     font-weight: 700;
     margin-right: 15px;
 }
-.btn-3:hover{
+
+.btn-3:hover {
     cursor: pointer;
 }
-.btn-3 h5{
+
+.btn-3 h5 {
     margin-top: 20px;
 }
-.order{
+
+.order {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: end;
 }
-.price{
+
+.price {
     margin-right: 50px;
 }
-  
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .Menu h1 {
+        font-size: 70px;
+    }
+
+    .variety {
+        gap: 40px;
+        align-items: center;
+    }
+
+    .default, .toggled {
+        height: 6vw;
+        width: 10vw;
+    }
+
+    .dish {
+        width: 30vw;
+        height: 50vw;
+    }
+
+    .dish img {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .dish h4 {
+        font-size: 24px;
+    }
+
+    .dish h3 {
+        font-size: 22px;
+    }
+
+    .dish p {
+        font-size: 18px;
+    }
+
+    .btn-3 {
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Menu h1 {
+        font-size: 50px;
+    }
+
+    .variety {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .default, .toggled {
+        height: 8vw;
+        width: 40vw;
+    }
+
+    .dish {
+        width: 60vw;
+        height: 80vw;
+    }
+
+    .dish img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .dish h4 {
+        font-size: 20px;
+    }
+
+    .dish h3 {
+        font-size: 18px;
+    }
+
+    .dish p {
+        font-size: 16px;
+    }
+
+    .btn-3 {
+        width: 130px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Menu h1 {
+        font-size: 35px;
+    }
+
+    .variety {
+        gap: 10px;
+    }
+
+    .default, .toggled {
+        height: 10vw;
+        width: 60vw;
+    }
+
+    .dish {
+        width: 80vw;
+        height: 100vw;
+    }
+
+    .dish img {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .dish h4 {
+        font-size: 18px;
+    }
+
+    .dish h3 {
+        font-size: 16px;
+    }
+
+    .dish p {
+        font-size: 14px;
+    }
+
+    .btn-3 {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
