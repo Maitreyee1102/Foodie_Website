@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './CSS/Order.css'
 import { CartContext } from '../Contexts/cartContext';
 import axios from "axios"
+import { useNavigate } from 'react-router';
 
 export const Order = () => {
   const {token,foodList,cartItems,url,calculateTotal} = useContext(CartContext);
@@ -68,6 +69,15 @@ export const Order = () => {
       }
     };
   }, []);
+  const navigate = useNavigate();
+  useEffect(()=>{
+    if(!token){
+      navigate('/cart')
+    }
+    else if(calculateTotal()===0){
+      navigate('/cart')
+    }
+  },[token])
 
   return (
     <>

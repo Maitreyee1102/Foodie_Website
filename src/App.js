@@ -13,6 +13,8 @@ import {Details} from './Pages/Details'
 import { ReservationConfirm } from './Pages/ReservationConfirm'
 import {ReservationCancel} from './Pages/ReservationCancel'
 import {Cart} from './Pages/Cart'
+import Verify from './Pages/Verify/Verify'
+import MyOrders from './Pages/MyOrders/MyOrders'
 
 
 export const App = () => {
@@ -34,6 +36,8 @@ export const App = () => {
         <Route path='/reservation/detail/confirmation' element = {<ReservationConfirm/>}/>
         <Route path='/reservation/cancel' element = {<ReservationCancel/>}/>
         <Route path='/cart' element = {<Cart/>}/>
+        <Route path='/verify' element = {<Verify/>}/>
+        <Route path='myorders' element={<MyOrders/>}/>
       </Routes>
       </BrowserRouter>
       <Footer/>

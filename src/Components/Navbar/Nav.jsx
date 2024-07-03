@@ -65,7 +65,7 @@ export const Nav = ({setShowLogin}) => {
           :<div className='navbar-profile'>
             <img className='icon1' src={profile} alt="" />
             <ul className="nav-profile-dropdown">
-              <li><img className='icon1' src={bag_icon} alt="" /><p>Orders</p></li>
+              <li><img onClick={()=>navigate('/myorders')} className='icon1' src={bag_icon} alt="" /><p>Orders</p></li>
               <hr />
               <li onClick={Logout}><img className='icon1' src={logout} alt="" /><p>Logout</p></li>
             </ul>  

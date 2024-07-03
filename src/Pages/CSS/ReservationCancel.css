@@ -63,30 +63,23 @@
     margin-top: 50px;
 }
 @media (max-width: 1200px) {
-    .circular-image {
-        width: 250px;
-        height: 250px;
+    .reserve{
+        display: flex;
+        flex-direction: column;
+    }
+    .small-container2 {
+        display: none;
     }
 
-    .small-container1 {
-        height: 350px;
-        width: 350px;
-    }
-
-    .container-about1 {
+    .container-about2 {
         height: 400px;
         width: 400px;
         margin: 50px;
         margin-top: 80px;
     }
 
-    .reserve {
+    .cancelation {
         height: auto;
-        margin: 100px;
-    }
-
-    .confirmation h1 {
-        font-size: 50px;
     }
 
     .details2 {
@@ -94,81 +87,78 @@
         height: auto;
     }
 
-    .btn12, .btn13 {
+    .btn11 {
         height: 8vh;
         width: 20vw;
         font-size: large;
     }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media (max-width: 768px) {
-    .detailedInfo{
+    .reserve{
         display: flex;
         flex-direction: column;
     }
-    .container-about1 {
+    .small-container2 {
         display: none;
     }
-    .div-1{
-        font-size: 20px;
-    }
 
-    .confirmation h1 {
-        font-size: 25px;
+    .container-about2 {
+        height: 300px;
+        width: 300px;
+        margin: 30px;
+        margin-top: 60px;
     }
 
     .details2 {
-        width: 60%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0;
+        background-color: white;
+        width: 90%;
+        margin-top: 50px;
     }
 
-    .btn12, .btn13 {
+    .btn11 {
         height: 6vh;
-        width: 25vw;
+        width: 30vw;
         font-size: medium;
     }
-
-    .buttons {
+    .buttons{
         display: flex;
         flex-direction: row;
-        gap: 15px;
-        margin-left: 40px;
     }
 }
 
 @media (max-width: 480px) {
-    .container-about1 {
+    .reserve{
+        display: flex;
+        flex-direction: column;
+    }
+    .small-container2 {
         display: none;
-        width: 150px;
-        height: 150px;
     }
 
-    .small-container1 {
-        height: 250px;
-        width: 250px;
-    }
-
-    .container-about1 {
+    .container-about2 {
         height: 250px;
         width: 250px;
         margin: 20px;
         margin-top: 40px;
     }
 
-    .confirmation h1 {
-        font-size: 30px;
-    }
-
     .details2 {
         width: 100%;
+        margin-top: 30px;
     }
 
-    .btn12, .btn13 {
+    .btn11 {
         height: 5vh;
         width: 40vw;
         font-size: small;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
     }
 }

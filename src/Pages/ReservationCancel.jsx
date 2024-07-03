@@ -32,6 +32,7 @@ export const ReservationCancel = () => {
                     <img src={img2} alt="" className='icon' />
                     <h3>BookingID #123456</h3>
                 </div>
+                </div>
                 <div className="detailedInfo1">
           <div className="container-about2">
             <div className="small-container2">
@@ -75,7 +76,6 @@ export const ReservationCancel = () => {
             </div></Link>
           </div>
         </div>
-            </div>
         </div>
     </>
   )
