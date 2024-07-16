@@ -3,7 +3,7 @@ import './CSS/Menu.css';
 import { CartContext } from '../Contexts/cartContext';
 
 export const Menu = () => {
-  const url = "http://localhost:4000";
+  const url = "https://foodie-website-backend.onrender.com/";
   const categories = ['All Category', 'Indian', 'Continental', 'Dessert', 'Drinks'];
   const [selectedCategory, setSelectedCategory] = useState('All Category');
 
