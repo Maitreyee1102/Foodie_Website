@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const Login = ({ setShowLogin }) => {
   const { setToken } = useContext(CartContext);
-  const url = "http://localhost:4000";
+  const url = "https://foodie-website-backend.onrender.com";
 
   const [currState, setCurrState] = useState("Sign Up");
   const [data, setData] = useState({

@@ -4,7 +4,7 @@ import axios from 'axios';
 export const CartContext = createContext(null);
 
 const CartContextProvider = (props) => {
-  const url = "http://localhost:4000";
+  const url = "https://foodie-website-backend.onrender.com";
   const [cartItems, setCartItems] = useState({});
   const [token, setToken] = useState("");
   const [foodList, setFoodList] = useState([]);

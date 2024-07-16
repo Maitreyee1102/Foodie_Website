@@ -5,7 +5,7 @@ import remove_icon from '../Components/assets/close_24dp_FILL0_wght400_GRAD0_ops
 import { useNavigate } from 'react-router';
 
 export const Cart = () => {
-  const url = "http://localhost:4000";
+  const url = "https://foodie-website-backend.onrender.com";
   const { foodList, cartItems, removeFromCart, calculateTotal } = useContext(CartContext);
 
   // Debugging logs
